@@ -1,0 +1,37 @@
+.ft {
+  &-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+    border-top: 1px solid grey;
+    color: $border;
+    font-size: 10px;
+
+    @include responsive(T) {
+      width: 60%;
+      font-size: 13px;
+    }
+  }
+  &-info-list {
+    display: inline-flex;
+    margin-bottom: 30px;
+  }
+  &-info-item {
+    margin-right: 30px;
+    cursor: pointer;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+  &-copyright {
+    display: block;
+    margin-top: 50px;
+    font-size: 9px;
+    font-weight: normal;
+
+    @include responsive(T) {
+      font-size: 12px;
+    }
+  }
+}

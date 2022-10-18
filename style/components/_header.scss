@@ -1,0 +1,150 @@
+header {
+  position: relative;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.gnb {
+  position: fixed;
+  width: 100vw;
+  height: 90px;
+  z-index: 10;
+  &-wrapper {
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-nav {
+    &-list {
+      display: flex;
+      justify-content: center;
+
+      .nav-item {
+        position: relative;
+        padding: 20px;
+        margin: 10px;
+
+        .nav-title {
+          font-size: 15px;
+          font-weight: 700;
+          color: $white;
+          &:hover {
+            color: $blue;
+          }
+        }
+        .menu {
+          position: absolute;
+          padding: 5px;
+          background-color: rgba($color: $white, $alpha: 0.5);
+          border-radius: 4px;
+          top: 60px;
+          &.item1 {
+            left: -8px;
+          }
+          &.item2 {
+            left: 3px;
+          }
+          &.item3 {
+            left: 11px;
+          }
+          &-item {
+            padding: 10px;
+            font-size: 14px;
+            font-weight: 500;
+            color: rgb(41, 41, 41);
+            &:hover {
+              color: $blue;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-right {
+    .user-btn {
+      padding: 5px;
+      border: 2px solid $white;
+      font-weight: 500;
+
+      &:hover {
+        color: $blue;
+        border-color: $blue;
+      }
+      &:first-of-type {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.logo {
+  margin-right: 20px;
+  img {
+    width: 160px;
+    height: auto;
+    padding-top: 10px;
+  }
+}
+
+.wrapper-banner {
+  display: flex;
+  width: 350px;
+  margin: 120px auto 0;
+  overflow-x: hidden;
+
+  @include responsive(T) {
+    width: 760px;
+    margin: 150px auto 0;
+  }
+  @include responsive(D) {
+    width: 959px;
+    margin: 150px auto 0;
+  }
+
+  .banner-image {
+    display: block;
+    width: 350px;
+    object-fit: contain;
+    border-radius: 8px;
+    @include responsive(T) {
+      width: 760px;
+    }
+    @include responsive(D) {
+      width: 959px;
+    }
+  }
+}
+
+.wrapper-boxes {
+  display: block;
+}
+
+.carusel {
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 60px;
+    margin: 10px auto;
+    position: absolute;
+    bottom: 0px;
+    right: 50%;
+    transform: translate(50%, -50%);
+    @include responsive(T) {
+      width: 100px;
+      bottom: 10px;
+    }
+  }
+  &-item {
+    width: 6px;
+    height: 6px;
+    background-color: $white;
+    border-radius: 50%;
+    opacity: 50%;
+    @include responsive(T) {
+      width: 10px;
+      height: 10px;
+    }
+  }
+}
