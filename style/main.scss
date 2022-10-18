@@ -1,0 +1,13 @@
+@import './constants/colors';
+@import './constants/typography';
+
+@import './base/global.scss';
+@import './base/reset.scss';
+
+@import './layout/responsive';
+
+@import './components/header';
+@import './components/footer';
+
+@import './pages/index';
+@import './pages/gidle';
