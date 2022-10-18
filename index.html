@@ -127,10 +127,10 @@
         <!-- banner -->
         <section class="wrapper-banner">
             <h2 class="visually-hidden">Banner</h2>
+            <img src="	http://www.cubeent.co.kr/banner/images/banner/120409/20221017_banner.jpg" alt="idle banner image"
+                class="banner-image">
             <img src="http://www.cubeent.co.kr/banner/images/banner/120409/20220427_banner.jpg"
                 alt="idle miyeon banner image" class="banner-image">
-            <img src="http://www.cubeent.co.kr/banner/images/banner/120409/20220906_banner.jpg" alt="btob banner image"
-                class="banner-image">
             <img src="http://www.cubeent.co.kr/banner/images/banner/120409/20220627_banner.jpg" alt="btob banner image2"
                 class="banner-image">
             <img src="http://www.cubeent.co.kr/banner/images/banner/120409/20220809_banner.jpg"
@@ -140,17 +140,34 @@
             <img src="http://www.cubeent.co.kr/banner/images/banner/120409/anicube_top_banner.jpg"
                 alt="anicube banner image" class="banner-image">
         </section>
+
+        <ul class="carusel-wrapper">
+            <li class="carusel-item num1"></li>
+            <li class="carusel-item num2"></li>
+            <li class="carusel-item num3"></li>
+            <li class="carusel-item num4"></li>
+            <li class="carusel-item num5"></li>
+        </ul>
+
     </header>
 
 
     <main class="container-main">
-        <h1>
-            <strong class="cube-text">THIS WEEK'S NEWS</strong>
+        <h1 class="main-tit">
+            <!-- TODO: 스크롤 이벤트  -->
+            <strong class="cube-text">THIS
+                <br>
+                MONTH'S
+                <br>
+                ARTISTS </strong>
             <img src="./assets/cube_text.png" alt="" class="cube-text-img">
         </h1>
         <article class="news">
-            <h2>NEW</h2>
-            <img class="news-poster" src="./assets/poster1.png" alt="아이들 새 앨범 포스터">
+            <h2 class="visually-hidden">NEW</h2>
+            <a href="./gidle.html" class="news-link">
+                <img class="news-poster" src="./assets/poster1.png" alt="아이들 새 앨범 포스터">
+            </a>
+
         </article>
         <section>
             <h2 class="visually-hidden">More About Cube</h2>
@@ -160,21 +177,16 @@
                         <strong>NEW
                             <br>
                             RELEASE</strong>
-                        <!-- 아이들 새 앨범 사진 (클릭시 유튜브 음원으로) -->
                         <a href="https://www.youtube.com/watch?v=SmuuDi5ZwOo&list=OLAK5uy_mg0f08wU3YE7uz5u0UN0cgHcyproVKUpU&index=2"
                             class="box-item" target="_blank">
-                            <img src="https://upload.wikimedia.org/wikipedia/en/f/fd/%28G%29I-dle_Nxde.jpeg"
-                                alt="Idle's new album">
+                            <img src="./assets/albumcover.jpeg" alt="Idle's new album">
                         </a>
                     </li>
                     <li class="main_page-box">
                         <strong>MUSIC
-                            <br>
                             VIDEO</strong>
-                        <!-- 아이들 뮤비 이미지  (클릭시 유튜브 뮤비 페이지)-->
-                        <a href="https://www.youtube.com/watch?v=fCO7f0SmrDc&list=OLAK5uy_mg0f08wU3YE7uz5u0UN0cgHcyproVKUpU&index=1"
-                            class="box-item" target="_blank">
-                            <img src="./assets/ilove.png" alt="Idle's music video">
+                        <a href="" class="box-item" target="_blank">
+                            <img src="./assets/music_video_thumbnail.jpeg" alt="뮤직비디오">
                         </a>
                     </li>
                 </div>
@@ -183,7 +195,7 @@
                         <strong>CUBE CAFE
                             <br>
                             PROMOTION</strong>
-                        <a href="" class="box-item" target="_blank">
+                        <a href="https://www.instagram.com/cubaker_cube/" class="box-item" target="_blank">
                             <img src="./assets/cubaker.png" alt="큐베이커">
                         </a>
                     </li>
@@ -191,51 +203,59 @@
                         <strong>OFFICAL
                             <br>
                             SHOP</strong>
-                        <a href="" class="box-item" target="_blank">
+                        <a href="http://www.cubee.co.kr/" class="box-item" target="_blank">
                             <img src="./assets/cubee.jpeg" alt="큐비 굿즈 온라인 샾">
                         </a>
                     </li>
                     <li class="main_page-box">
                         <strong>ANICUBE</strong>
-                        <a href="" class="box-item" target="_blank">
+                        <a href="https://www.anicube.com/" class="box-item" target="_blank">
                             <img src="./assets/anicube.png" alt="에니큐브">
                         </a>
                     </li>
                 </div>
             </ul>
 
-            <section class="wrapper-sns">
+            <section class="sns-container">
                 <h2 class="visually-hidden">SNS</h2>
-                <ul>
-                    <li>
+                <ul class="sns-wrapper">
+                    <li class="sns-item">
                         <a href="https://twitter.com/cubeunited" target="_blank">
                             TWITTER
                         </a>
                     </li>
-                    <li>
+                    <li class="sns-item">
                         <a href="https://www.facebook.com/UNITEDCUBE" target="_blank">
                             FACEBOOK
                         </a>
                     </li>
-                    <li>
+                    <li class="sns-item">
                         <a href="https://www.youtube.com/user/theunitedcube" target="_blank">
                             YOUTUBE
                         </a>
                     </li>
-                    <li>
+                    <li class="sns-item">
                         <a href="https://weibo.com/u/2641606884" target="_blank">
                             WEIBO
                         </a>
                     </li>
                 </ul>
             </section>
-            <ul>
-
-            </ul>
         </section>
-
     </main>
-    <footer>
+
+    <footer class="ft-container">
+        <ul class="ft-info-list">
+            <li class="ft-info-item">이용약관</li>
+            <li class="ft-info-item">이메일주소 무단수집거부</li>
+            <li class="ft-info-item">개인정보취급방침</li>
+        </ul>
+        <div class="txt-wrapper">
+            <address class="ft-txt">7F, 83, ACHASAN-RO, SEONGDONG-GU, SEOUL, 04793 KOREA</address>
+            <span class="ft-txt">TEL:82-2-3445-1045</span>
+        </div>
+
+        <strong class="ft-copyright">COPYRIGHT (C) CUBE ENTERTAINMENT INC, ALL RIGHT RESERVED.</strong>
 
     </footer>
 </body>
