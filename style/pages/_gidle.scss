@@ -50,8 +50,7 @@
   }
 
   .sticky {
-    overflow: auto;
-    @include no-scrollbar;
+    overflow: scroll;
 
     @include responsive(D) {
       position: sticky;
