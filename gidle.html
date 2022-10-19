@@ -12,15 +12,16 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="shortcut icon" href="http://www.cubeent.co.kr/files/attach/xeicon/favicon.ico">
     <link rel="stylesheet" href="./style/main.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </head>
 
 <body>
     <header>
         <div class="gnb">
-
             <div class="gnb-wrapper">
 
                 <!-- logo  -->
@@ -134,8 +135,8 @@
             </button>
         </section>
     </header>
-    <main class="idle-main">
 
+    <main class="idle-main">
         <h1 class="idle-title">(G)-IDLE</h1>
         <section class="idle-section">
             <h2 class="visually-hidden">아이들 단체 사진</h2>
@@ -169,7 +170,8 @@
 
 
             <div class="album-title-wrapper">
-                <strong class="album-title">I LOVE</strong>
+                <strong class="album-title" data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in-cubic"
+                    data-aos-duration="800" data-aos-once="true">I LOVE</strong>
                 <br>
                 <span class="album-release">2022.10.17</span>
             </div>
@@ -177,7 +179,8 @@
             <section class="album-desc">
                 <h2 class="visually-hidden">앨범 소개글</h2>
 
-                <div class="wrapper-album-image">
+                <div class="wrapper-album-image" data-aos="fade-up" data-aos-offset="200"
+                    data-aos-easing="ease-in-cubic" data-aos-duration="500" data-aos-once="true">
                     <img src="./assets/images/nude_poster.png" alt="포스터 이미지" class="album-image">
                     <img src="./assets/images/nude_poster.png" alt="포스터 이미지" class="album-image">
                     <img src="./assets/images/nude_poster2.jpeg" alt="포스터 이미지" class="album-image last">
@@ -194,12 +197,17 @@
                     </strong>
                 </div>
 
-                <p class="desc-txt">[I LOVE]는 '나'는 내가 아닌 다른 누군가가 원하는 무습이 아니 그냥 '나' 본연의 모습으로 존재해야 마땅하며 내가 원하지 않는 겉치레는
+                <p class="desc-txt" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="500"
+                    data-aos-delay="300" data-aos-once="true">[I LOVE]는 '나'는 내가 아닌 다른 누군가가 원하는
+                    무습이 아니 그냥 '나' 본연의
+                    모습으로 존재해야 마땅하며 내가 원하지 않는
+                    겉치레는
                     벗어 던지고 꾸밈없는 본모습을
                     보여주겠다는 당찬 각오를 담고있다.
                 </p>
 
-                <p class="desc-txt last">
+                <p class="desc-txt last" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-cubic"
+                    data-aos-duration="500" data-aos-delay="400" data-aos-once="true">
                     아이들은 편견을 부수고, 자신이 사랑하는 것들과 자신을 사랑해주는 것들 그리고 자신을 지키기 위해 '꼴이 볼품없더라도, 어쩌면 다신 사랑받지 못한다고 해도' 맨발로 당을
                     딛고
                     선다. 마침내 시대를 뒤바꿀 그들의 발검음이 더욱 기대된다.
@@ -208,11 +216,13 @@
 
             </section>
             <div class="seperate-tit">
-                <strong>Yes I'm Nxde</strong>
+                <strong data-aos="fade-up" data-aos-easing="ease-in-cubic" data-aos-duration="1000" data-aos-delay="100"
+                    data-aos-once="true">Yes I'm Nxde</strong>
             </div>
 
 
-            <section class="tracklist-wrapper">
+            <section class="tracklist-wrapper" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+                data-aos-duration="1000" data-aos-delay="100" data-aos-once="true">
                 <h2 class="tracklist-tit">TRACK LIST</h2>
                 <img src="./assets/images/nude_Track-List.jpeg" alt="i love track list" class="tracklist-image">
                 <ol class="tracklist-list">
@@ -285,10 +295,7 @@
             </p>&mdash; (G)I-DLE·(여자)아이들 (@G_I_DLE)
             <a href="https://twitter.com/G_I_DLE/status/1582295422139252737?ref_src=twsrc%5Etfw">October 18, 2022</a>
         </blockquote>
-
-
     </aside>
-
 
     <footer class="ft-container">
         <ul class="ft-info-list">
@@ -304,8 +311,10 @@
         <strong class="ft-copyright">COPYRIGHT (C) CUBE ENTERTAINMENT INC, ALL RIGHT RESERVED.</strong>
     </footer>
 
+    <script>
+        AOS.init();
+    </script>
     <script type="text/javascript" src="./js/textScroll.js"></script>
-
 </body>
 
 </html>

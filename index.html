@@ -13,7 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,700&display=swap"
         rel="stylesheet">
     <link rel="shortcut icon" href="http://www.cubeent.co.kr/files/attach/xeicon/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="./style/main.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -170,10 +172,12 @@
                 MONTH'S
                 <br>
                 ARTISTS </strong>
-            <strong class="monthly">(G)-IDLE</strong>
+            <strong class="monthly" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000" data-aos-once="true">(G)-IDLE</strong>
 
         </h1>
-        <article class="news">
+        <article class="news" data-aos="fade" data-aos-offset="200" data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000" data-aos-once="true">
             <h2 class="visually-hidden">NEW</h2>
             <a href="./gidle.html" class="news-link">
                 <img class="news-poster" src="./assets/images/all_photo_3.jpeg" alt="아이들 새 앨범 포스터">
@@ -183,7 +187,8 @@
         <section>
             <h2 class="visually-hidden">More About Cube</h2>
             <ul class="wrapper-boxes">
-                <div class="top-box-section">
+                <div class="top-box-section" class="news" data-aos="fade-up" data-aos-offset="200"
+                    data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true">
                     <li class="main_page-box">
                         <strong>NEW
                             <br>
@@ -201,7 +206,8 @@
                         </a>
                     </li>
                 </div>
-                <div class="bottom-box-section">
+                <div class="bottom-box-section" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000" data-aos-delay="400" data-aos-once="true">
                     <li class="main_page-box">
                         <strong>CUBE CAFE
                             <br>
@@ -269,6 +275,10 @@
         <strong class="ft-copyright">COPYRIGHT (C) CUBE ENTERTAINMENT INC, ALL RIGHT RESERVED.</strong>
 
     </footer>
+
+    <script>
+        AOS.init(); 
+    </script>
 </body>
 
 </html>
