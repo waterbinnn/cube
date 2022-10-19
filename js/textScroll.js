@@ -57,7 +57,7 @@ let verticalScrollHeight =
 //Scroll function
 function horizontalScroll() {
   let stickyPosition = sticky.getBoundingClientRect().top
-  if (stickyPosition > 100) {
+  if (stickyPosition > 250) {
     return
   } else {
     let scrolled = stickyParent.getBoundingClientRect().top
