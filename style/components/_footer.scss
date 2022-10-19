@@ -4,8 +4,8 @@
     margin: 0 auto;
     padding: 50px 0;
     text-align: center;
-    border-top: 1px solid grey;
-    color: $border;
+    border-top: 1px solid $grey;
+    color: $grey;
     font-size: 10px;
 
     @include responsive(T) {
