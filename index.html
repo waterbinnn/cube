@@ -23,7 +23,6 @@
         <div class="gnb">
 
             <div class="gnb-wrapper md-only">
-
                 <!-- logo  -->
                 <section class="gnb-left">
                     <h1 class="logo">
@@ -38,8 +37,8 @@
                     <h2 class="visually-hidden">메뉴</h2>
                     <ul class="gnb-nav-list">
                         <!-- COMPANY -->
-                        <li class="nav-item company">
-                            <button type="button" class="nav-title">
+                        <li class="nav-item ">
+                            <button type="button" class="nav-title" id="company">
                                 COMPANY
                             </button>
                             <ul class="menu item1">
@@ -62,7 +61,7 @@
                         </li>
                         <!-- ARTISTS -->
                         <li class="nav-item">
-                            <button type="button" class="nav-title">
+                            <button type="button" class="nav-title" id="artists">
                                 ARTISTS
                             </button>
                             <ul class="menu item2">
@@ -96,7 +95,7 @@
 
                         <!-- MULTIMEDIA -->
                         <li class="nav-item">
-                            <button type="button" class="nav-title">
+                            <button type="button" class="nav-title" id="multimedia">
                                 MULTIMEDIA
                             </button>
                             <ul class="menu item3">
@@ -277,8 +276,9 @@
     </footer>
 
     <script>
-        AOS.init(); 
+        AOS.init();
     </script>
+    <script type="text/javascript" src="./js/nav.js"></script>
 </body>
 
 </html>

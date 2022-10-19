@@ -41,15 +41,7 @@ header {
             background-color: rgba($color: $white, $alpha: 0.5);
             border-radius: 4px;
             top: 40px;
-            &.item1 {
-              left: -2px;
-            }
-            &.item2 {
-              left: 4px;
-            }
-            &.item3 {
-              left: 10px;
-            }
+
             &-item {
               padding: 10px 4px;
               font-size: 11px;
@@ -57,6 +49,28 @@ header {
               color: rgb(41, 41, 41);
               &:hover {
                 color: $blue;
+              }
+            }
+
+            &.item1 {
+              left: -2px;
+              display: none;
+              &.active {
+                display: block;
+              }
+            }
+            &.item2 {
+              left: 4px;
+              display: none;
+              &.active {
+                display: block;
+              }
+            }
+            &.item3 {
+              left: 10px;
+              display: none;
+              &.active {
+                display: block;
               }
             }
           }
