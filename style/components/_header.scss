@@ -5,56 +5,59 @@ header {
 }
 
 .gnb {
-  position: fixed;
-  width: 100vw;
-  height: 90px;
-  z-index: 10;
-  &-wrapper {
-    padding: 20px 5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  &-nav {
-    &-list {
+  display: none;
+  @include responsive(T) {
+    display: block;
+    position: fixed;
+    width: 100vw;
+    z-index: 10;
+    &-wrapper {
+      padding: 0 3vw;
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &-nav {
+      &-list {
+        display: flex;
+        justify-content: center;
 
-      .nav-item {
-        position: relative;
-        padding: 20px;
-        margin: 10px;
+        .nav-item {
+          position: relative;
+          padding: 10px;
+          margin: 20px;
 
-        .nav-title {
-          font-size: 15px;
-          font-weight: 700;
-          color: $white;
-          &:hover {
-            color: $blue;
-          }
-        }
-        .menu {
-          position: absolute;
-          padding: 5px;
-          background-color: rgba($color: $white, $alpha: 0.5);
-          border-radius: 4px;
-          top: 60px;
-          &.item1 {
-            left: -8px;
-          }
-          &.item2 {
-            left: 3px;
-          }
-          &.item3 {
-            left: 11px;
-          }
-          &-item {
-            padding: 10px;
+          .nav-title {
             font-size: 14px;
-            font-weight: 500;
-            color: rgb(41, 41, 41);
+            font-weight: 700;
+            color: $white;
             &:hover {
               color: $blue;
+            }
+          }
+          .menu {
+            position: absolute;
+            padding: 4px;
+            background-color: rgba($color: $white, $alpha: 0.5);
+            border-radius: 4px;
+            top: 40px;
+            &.item1 {
+              left: -2px;
+            }
+            &.item2 {
+              left: 4px;
+            }
+            &.item3 {
+              left: 10px;
+            }
+            &-item {
+              padding: 10px 4px;
+              font-size: 11px;
+              font-weight: 500;
+              color: rgb(41, 41, 41);
+              &:hover {
+                color: $blue;
+              }
             }
           }
         }
@@ -63,9 +66,12 @@ header {
   }
 
   &-right {
+    display: flex;
+    flex-wrap: nowrap;
     .user-btn {
       padding: 5px;
       border: 2px solid $white;
+      font-size: 12px;
       font-weight: 500;
 
       &:hover {
@@ -82,35 +88,58 @@ header {
 .logo {
   margin-right: 20px;
   img {
-    width: 160px;
+    width: 100px;
     height: auto;
-    padding-top: 10px;
+    padding-top: 20px;
+  }
+}
+
+.gnb-mobile {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  margin: 0 auto;
+  z-index: 10;
+
+  .logo {
+    img {
+      width: 160px;
+    }
+  }
+
+  .menu-icon {
+    position: absolute;
+    right: 20px;
+    img {
+      width: 30px;
+      margin-top: 10px;
+    }
+  }
+
+  @include responsive(T) {
+    display: none;
   }
 }
 
 .wrapper-banner {
   display: flex;
-  width: 350px;
-  margin: 120px auto 0;
+  width: 80vw;
+  margin: 100px auto 0;
   overflow-x: hidden;
 
-  @include responsive(T) {
-    width: 760px;
-    margin: 150px auto 0;
-  }
   @include responsive(D) {
     width: 959px;
-    margin: 150px auto 0;
+    margin: 10vw auto 0;
   }
 
   .banner-image {
     display: block;
-    width: 350px;
+    width: 80vw;
     object-fit: contain;
     border-radius: 8px;
-    @include responsive(T) {
-      width: 760px;
-    }
+
     @include responsive(D) {
       width: 959px;
     }
@@ -119,32 +148,4 @@ header {
 
 .wrapper-boxes {
   display: block;
-}
-
-.carusel {
-  &-wrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 60px;
-    margin: 10px auto;
-    position: absolute;
-    bottom: 0px;
-    right: 50%;
-    transform: translate(50%, -50%);
-    @include responsive(T) {
-      width: 100px;
-      bottom: 10px;
-    }
-  }
-  &-item {
-    width: 6px;
-    height: 6px;
-    background-color: $white;
-    border-radius: 50%;
-    opacity: 50%;
-    @include responsive(T) {
-      width: 10px;
-      height: 10px;
-    }
-  }
 }
