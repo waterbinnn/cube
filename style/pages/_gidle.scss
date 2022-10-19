@@ -44,15 +44,22 @@
 
 .members-container {
   width: 100vw;
-  height: 150vh;
   margin: 5vw 0;
+  @include responsive(D) {
+    height: 500vh;
+  }
 
   .sticky {
-    position: sticky;
-    top: 100px;
-    max-height: 100vh;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow: auto;
+    @include no-scrollbar;
+
+    @include responsive(D) {
+      position: sticky;
+      top: 200px;
+      max-height: 100vh;
+      overflow-x: hidden;
+      overflow-y: hidden;
+    }
   }
 
   .horizontal {
@@ -191,6 +198,7 @@
   position: relative;
   width: 90%;
   margin: 40vw auto 30vw;
+  margin-right: 10px;
   strong {
     font-family: $font-album;
     font-size: 16vw;
@@ -262,11 +270,21 @@
   flex-wrap: wrap;
   gap: 3vw;
   margin: 0 5vw 10vw;
+  @include responsive(T) {
+    flex-wrap: nowrap;
+  }
 }
 
 .twitter-tweet {
   max-width: 16vw;
   min-width: 10vw;
+
+  &:last-child {
+    margin: -150px 0;
+    @include responsive(T) {
+      margin: 0;
+    }
+  }
 }
 
 @keyframes gradient {

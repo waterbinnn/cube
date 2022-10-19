@@ -20,7 +20,7 @@
     margin-top: 10vw;
     text-align: center;
     position: relative;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: $font-album;
     .cube-text {
       position: absolute;
       top: -15vw;
@@ -34,6 +34,7 @@
       top: -6vw;
       left: 30vw;
       transform: rotate(-10deg);
+      z-index: 10;
       @include textColor;
     }
   }
