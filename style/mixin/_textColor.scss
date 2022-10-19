@@ -1,0 +1,7 @@
+@mixin textColor {
+  color: transparent;
+  background-image: url('../../assets/images/bg_gradient01.jpeg');
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: gradient 8s linear infinite;
+}
