@@ -1,0 +1,22 @@
+.carousel {
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 12vw;
+    margin: 10px auto;
+    position: absolute;
+    transform: translate(50%, -50%);
+
+    &.main {
+      bottom: 0px;
+      right: 50%;
+    }
+  }
+  &-item {
+    width: 1.2vw;
+    height: 1.2vw;
+    background-color: $white;
+    border-radius: 50%;
+    opacity: 50%;
+  }
+}
