@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,700&display=swap"
+        rel="stylesheet">
     <link rel="shortcut icon" href="http://www.cubeent.co.kr/files/attach/xeicon/favicon.ico">
     <link rel="stylesheet" href="./style/main.css">
 </head>
@@ -18,13 +20,13 @@
     <header>
         <div class="gnb">
 
-            <div class="gnb-wrapper">
+            <div class="gnb-wrapper md-only">
 
                 <!-- logo  -->
                 <section class="gnb-left">
                     <h1 class="logo">
                         <a href="/">
-                            <img src="./assets/logo.png" alt="큐브엔터테인먼트 로고이미지">
+                            <img src="./assets/images/logo.png" alt="큐브엔터테인먼트 로고이미지">
                         </a>
                     </h1>
                 </section>
@@ -120,8 +122,16 @@
                     <a href="#" class="user-btn">SIGNUP</a>
                 </section>
             </div>
-
         </div>
+        <section class="gnb-mobile">
+            <h1 class="visually-hidden">header</h1>
+            <a href="/" class="logo">
+                <img src="./assets/images/logo.png" alt="큐브엔터테인먼트 로고이미지">
+            </a>
+            <button type="button" class="menu-icon">
+                <img src="./assets/icons/icon-menu.svg" alt="메뉴아이콘" class="icon-image">
+            </button>
+        </section>
 
 
         <!-- banner -->
@@ -141,12 +151,12 @@
                 alt="anicube banner image" class="banner-image">
         </section>
 
-        <ul class="carusel-wrapper">
-            <li class="carusel-item num1"></li>
-            <li class="carusel-item num2"></li>
-            <li class="carusel-item num3"></li>
-            <li class="carusel-item num4"></li>
-            <li class="carusel-item num5"></li>
+        <ul class="carousel-wrapper main">
+            <li class="carousel-item num1"></li>
+            <li class="carousel-item num2"></li>
+            <li class="carousel-item num3"></li>
+            <li class="carousel-item num4"></li>
+            <li class="carousel-item num5"></li>
         </ul>
 
     </header>
@@ -160,15 +170,16 @@
                 MONTH'S
                 <br>
                 ARTISTS </strong>
-            <img src="./assets/cube_text.png" alt="" class="cube-text-img">
+            <strong class="monthly">(G)-IDLE</strong>
+
         </h1>
         <article class="news">
             <h2 class="visually-hidden">NEW</h2>
             <a href="./gidle.html" class="news-link">
-                <img class="news-poster" src="./assets/poster1.png" alt="아이들 새 앨범 포스터">
+                <img class="news-poster" src="./assets/images/all_photo_3.jpeg" alt="아이들 새 앨범 포스터">
             </a>
-
         </article>
+
         <section>
             <h2 class="visually-hidden">More About Cube</h2>
             <ul class="wrapper-boxes">
@@ -179,14 +190,14 @@
                             RELEASE</strong>
                         <a href="https://www.youtube.com/watch?v=SmuuDi5ZwOo&list=OLAK5uy_mg0f08wU3YE7uz5u0UN0cgHcyproVKUpU&index=2"
                             class="box-item" target="_blank">
-                            <img src="./assets/albumcover.jpeg" alt="Idle's new album">
+                            <img src="./assets/images/albumcover.jpeg" alt="Idle's new album">
                         </a>
                     </li>
                     <li class="main_page-box">
                         <strong>MUSIC
                             VIDEO</strong>
                         <a href="" class="box-item" target="_blank">
-                            <img src="./assets/music_video_thumbnail.jpeg" alt="뮤직비디오">
+                            <img src="./assets/images/music_video_thumbnail.jpeg" alt="뮤직비디오">
                         </a>
                     </li>
                 </div>
@@ -196,7 +207,7 @@
                             <br>
                             PROMOTION</strong>
                         <a href="https://www.instagram.com/cubaker_cube/" class="box-item" target="_blank">
-                            <img src="./assets/cubaker.png" alt="큐베이커">
+                            <img src="./assets/images/cubaker.png" alt="큐베이커">
                         </a>
                     </li>
                     <li class="main_page-box">
@@ -204,13 +215,13 @@
                             <br>
                             SHOP</strong>
                         <a href="http://www.cubee.co.kr/" class="box-item" target="_blank">
-                            <img src="./assets/cubee.jpeg" alt="큐비 굿즈 온라인 샾">
+                            <img src="./assets/images/cubee.jpeg" alt="큐비 굿즈 온라인 샾">
                         </a>
                     </li>
                     <li class="main_page-box">
                         <strong>ANICUBE</strong>
                         <a href="https://www.anicube.com/" class="box-item" target="_blank">
-                            <img src="./assets/anicube.png" alt="에니큐브">
+                            <img src="./assets/images/anicube.png" alt="에니큐브">
                         </a>
                     </li>
                 </div>

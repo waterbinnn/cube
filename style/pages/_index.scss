@@ -1,59 +1,40 @@
 .container-main {
+  width: 90vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 50px 20px 0;
+  margin: 20vw 5vw 0;
 
   @include responsive(T) {
-    margin: 100px;
+    margin: 11vw 5vw 0;
   }
 
   .news {
     text-align: center;
     &-poster {
-      width: 340px;
-      padding-top: 30px;
-
-      @include responsive(T) {
-        width: 580px;
-        margin: 50px;
-      }
-      @include responsive(D) {
-        width: 800px;
-        font-size: 200px;
-        top: 40%;
-      }
+      width: 78vw;
     }
   }
 
   .main-tit {
-    position: relative;
+    margin-top: 10vw;
     text-align: center;
-
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
     .cube-text {
       position: absolute;
-      transform: rotate(-20deg);
-      font-size: 40px;
-      top: -10px;
-      left: 70px;
+      top: -15vw;
+      left: 35vw;
+      font-size: 5vw;
       line-height: 0.8;
-      color: $white;
-      opacity: 0.6;
-
-      @include responsive(T) {
-        font-size: 100px;
-      }
-      @include responsive(D) {
-        font-size: 100px;
-        left: 30%;
-      }
-
-      &-img {
-        width: 80%;
-        @include responsive(D) {
-          width: 60%;
-        }
-      }
+    }
+    .monthly {
+      font-size: 8vw;
+      position: absolute;
+      top: -6vw;
+      left: 30vw;
+      transform: rotate(-10deg);
+      @include textColor;
     }
   }
 
@@ -68,7 +49,7 @@
     justify-content: flex-end;
     align-items: center;
     text-align: center;
-    gap: 12px;
+    gap: 2vw;
 
     @include responsive(T) {
       text-align: left;
@@ -81,26 +62,24 @@
     justify-content: center;
     align-items: flex-end;
     flex-wrap: wrap;
-    gap: 40px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    gap: 10vw;
+    margin: 20vw 0 10vw;
 
     @include responsive(T) {
       flex-wrap: nowrap;
-      gap: 20px;
-      margin-top: -45px;
-      margin-bottom: 90px;
+      gap: 3vw;
+      margin: 10vw 0 10vw;
     }
 
     .box-item {
-      width: 300px;
-
-      @include responsive(D) {
-        width: 600px;
+      width: 90%;
+      margin: 0 auto;
+      @include responsive(T) {
+        width: 98%;
       }
 
       img {
-        object-fit: cover;
+        object-fit: contain;
         width: 100%;
         border-radius: 8px;
       }
@@ -112,25 +91,23 @@
     justify-content: center;
     align-items: flex-end;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 10vw;
 
     @include responsive(T) {
       flex-wrap: nowrap;
-      gap: 20px;
+      gap: 3vw;
     }
 
     .box-item {
       object-fit: cover;
-      width: 300px;
+      width: 80vw;
 
       @include responsive(T) {
-        width: 220px;
-      }
-      @include responsive(D) {
-        width: 400px;
+        width: 28vw;
       }
 
       img {
+        object-fit: contain;
         width: 100%;
         border-radius: 8px;
       }
@@ -139,16 +116,12 @@
 
   .main_page-box {
     strong {
-      font-size: 20px;
+      font-size: 5vw;
       line-height: 1.2;
       letter-spacing: -0.05em;
-
+      margin-bottom: 8px;
       @include responsive(T) {
-        font-size: 30px;
-        line-height: 0.9;
-      }
-      @include responsive(D) {
-        font-size: 50px;
+        font-size: 3vw;
       }
     }
   }
@@ -156,26 +129,14 @@
 
 .sns {
   &-wrapper {
+    width: 80vw;
     display: flex;
-    flex-direction: column;
-    margin: 50px auto;
-
-    @include responsive(T) {
-      flex-direction: row;
-      justify-content: space-between;
-      width: 60%;
-      margin: 150px auto 50px;
-    }
+    justify-content: space-between;
+    margin: 10vw auto 10vw;
   }
   &-item {
-    font-size: 16px;
+    font-size: 2vw;
     font-weight: 500;
     color: rgb(241, 241, 241);
-    margin-bottom: 10px;
-
-    @include responsive(D) {
-      font-size: 20px;
-      margin-bottom: 0;
-    }
   }
 }

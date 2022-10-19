@@ -1,0 +1,289 @@
+.background {
+  width: 100vw;
+}
+
+.idle {
+  &-title {
+    padding: 100px 0 40px;
+    text-align: center;
+    font-family: $font-album;
+    font-size: 14vw;
+    @include responsive(D) {
+      padding: 10vw 0 8vw;
+    }
+  }
+  &-section {
+    width: min-content;
+    margin: 0 auto;
+  }
+}
+
+.image-wrapper {
+  position: relative;
+  display: flex;
+
+  .title-image {
+    width: 60vw;
+    border-radius: 8px;
+  }
+
+  .carousel-btn {
+    position: absolute;
+    bottom: 2%;
+    img {
+      width: 4vw;
+    }
+    &.before {
+      left: 2%;
+    }
+    &.next {
+      right: 2%;
+    }
+  }
+}
+
+.members-container {
+  width: 100vw;
+  height: 150vh;
+  margin: 5vw 0;
+
+  .sticky {
+    position: sticky;
+    top: 100px;
+    max-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  .horizontal {
+    display: flex;
+  }
+  @include no-scrollbar;
+
+  img {
+    display: block;
+    width: 30vw;
+    margin: 10px;
+    &:first-of-type {
+      margin-left: 30px;
+    }
+    &:last-of-type {
+      margin-right: 30px;
+    }
+  }
+}
+
+.album-section {
+  margin: 2vw 0;
+  @include responsive(D) {
+    margin: 10vw 0;
+  }
+}
+
+.album-title-wrapper {
+  text-align: center;
+
+  .album-title {
+    font-family: $font-album;
+    font-size: 26vw;
+    font-weight: 400;
+    line-height: 1;
+    @include textColor;
+  }
+
+  .album-release {
+    display: block;
+    margin: 2vw 0;
+    font-size: 2vw;
+    font-weight: 500;
+    color: $grey;
+  }
+}
+
+.album-desc {
+  position: relative;
+
+  .wrapper-album-image {
+    position: relative;
+    margin: 10vw auto 44vw;
+
+    .album-image {
+      display: block;
+      border-radius: 4px;
+      filter: drop-shadow(2px 4px 6px $black);
+
+      &:first-of-type {
+        width: 40vw;
+        margin: 0 auto;
+      }
+      &:nth-of-type(2) {
+        position: absolute;
+        top: 8vw;
+        left: 6vw;
+        width: 40vw;
+        margin: 50px;
+        z-index: -1;
+        filter: grayscale(1);
+      }
+      &.last {
+        position: absolute;
+        right: 5%;
+        bottom: -46%;
+        width: 50vw;
+      }
+    }
+
+    .wrapper-subtext {
+      width: 100vw;
+      overflow: hidden;
+    }
+
+    .front-txt {
+      font-size: 7vw;
+      line-height: 1;
+      font-weight: 800;
+      position: absolute;
+      bottom: 8vw;
+      left: 3vw;
+      @include textColor;
+    }
+
+    .back-txt {
+      display: flex;
+      color: transparent;
+      font-size: 10vw;
+      font-weight: 900;
+      font-style: italic;
+      -webkit-text-stroke: 1px $grey;
+      z-index: -10;
+      white-space: nowrap;
+      &.bottom {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+  .album-desc-tit {
+    font-weight: 300;
+    font-size: 3vw;
+    letter-spacing: -0.095em;
+    position: absolute;
+    left: 3vw;
+    bottom: -46%;
+  }
+}
+
+.desc-txt {
+  width: 40vw;
+  font-weight: 300;
+  font-size: 2vw;
+  letter-spacing: -0.095em;
+  margin: 3vw;
+  &.last {
+    width: 42vw;
+    position: absolute;
+    bottom: -14vw;
+    right: 2vw;
+  }
+}
+
+.seperate-tit {
+  position: relative;
+  width: 90%;
+  margin: 40vw auto 30vw;
+  strong {
+    font-family: $font-album;
+    font-size: 16vw;
+    font-weight: 300;
+    @include textColor;
+  }
+  &::after,
+  &::before {
+    content: '';
+    display: block;
+    width: 0.3vw;
+    height: 20vw;
+    background-color: $nude;
+    position: absolute;
+    right: 50%;
+  }
+  &::after {
+    bottom: -22vw;
+  }
+  &::before {
+    top: -20vw;
+  }
+}
+
+.tracklist {
+  &-wrapper {
+    text-align: center;
+  }
+  &-tit {
+    margin-bottom: 3vw;
+    font-family: $font-album;
+    font-size: 8vw;
+    font-weight: 500;
+  }
+  &-image {
+    display: block;
+    margin: 0 auto 6vw;
+    width: 80vw;
+    border-radius: 40px;
+  }
+  &-list {
+    font-family: $font-album;
+    font-size: 3vw;
+    font-weight: 400;
+    letter-spacing: -0.095em;
+    li {
+      margin-bottom: 2vw;
+    }
+  }
+}
+
+.music-video {
+  display: block;
+  margin: 10vw auto;
+  width: 88vw;
+  height: 50vw;
+}
+
+.sns-wrapper {
+  &.idle {
+    margin: 10vw auto;
+  }
+}
+
+.twitter-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3vw;
+  margin: 0 5vw 10vw;
+}
+
+.twitter-tweet {
+  max-width: 16vw;
+  min-width: 10vw;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0 0;
+  }
+  25% {
+    background-position: 75% 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+  75% {
+    background-position: 75% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
