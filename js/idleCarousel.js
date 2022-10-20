@@ -33,7 +33,7 @@ const next = () => {
   slider.style.transform = `translateX(${-imgSize * current}px)`
 }
 
-let auto = setInterval(next, 1000)
+let auto = setInterval(next, 2000)
 
 slider.addEventListener('mouseleave', () => {
   auto = setInterval(next, 2000)
