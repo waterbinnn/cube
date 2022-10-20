@@ -255,16 +255,15 @@ header {
           transform: translate(50%, 50%);
   z-index: 1;
 }
-.wrapper-banner .carousel-btn:focus, .wrapper-banner .carousel-btn:active {
-  padding: 5px;
-  border: 1px solid #3da5f5;
-}
 .wrapper-banner .carousel-btn img {
   width: 10px;
 }
 @media screen and (min-width: 768px) {
   .wrapper-banner .carousel-btn img {
     width: 30px;
+  }
+  .wrapper-banner .carousel-btn img:focus, .wrapper-banner .carousel-btn img:active {
+    width: 32px;
   }
 }
 .wrapper-banner .carousel-btn.left {
