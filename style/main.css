@@ -291,6 +291,36 @@ header {
   display: block;
 }
 
+.mobile-menulist {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  padding: 30px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.66);
+}
+.mobile-menulist .nav-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #3186c4;
+}
+.mobile-menulist .menu {
+  margin-bottom: 20px;
+  margin-left: -4px;
+}
+.mobile-menulist .menu-item {
+  font-size: 12px;
+  margin: 5px;
+}
+.mobile-menulist .menu-item:hover {
+  color: #3da5f5;
+}
+.mobile-menulist.active {
+  display: block;
+}
+
 .ft-container {
   width: 90%;
   margin: 0 auto;

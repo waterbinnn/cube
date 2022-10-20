@@ -190,3 +190,34 @@ header {
 .wrapper-boxes {
   display: block;
 }
+
+.mobile-menulist {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  padding: 30px;
+  color: $white;
+  background-color: rgba($color: $black, $alpha: 0.66);
+  .nav-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: $blue-dark;
+  }
+  .menu {
+    margin-bottom: 20px;
+    margin-left: -4px;
+  }
+  .menu-item {
+    font-size: 12px;
+    margin: 5px;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+  &.active {
+    display: block;
+  }
+}
