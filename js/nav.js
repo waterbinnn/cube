@@ -12,9 +12,6 @@ const navList = [company, artist, multimedia]
 const menu = [companyList, artistsList, multimediaList]
 
 for (let i = 0; i < navList.length; i++) {
-  navList[i].addEventListener('mouseover', () => {
-    menu[i].classList.toggle('active')
-  })
   navList[i].addEventListener('click', () => {
     menu[i].classList.toggle('active')
   })
@@ -27,10 +24,6 @@ for (let i = 0; i < navList.length; i++) {
     menu[i - 1].classList.remove('active')
   })
   menu[i].addEventListener('keydown', () => {
-    menu[i - 1].classList.remove('active')
-    menu[i + 1].classList.remove('active')
-  })
-  menu[i].addEventListener('click', () => {
     menu[i - 1].classList.remove('active')
     menu[i + 1].classList.remove('active')
   })
