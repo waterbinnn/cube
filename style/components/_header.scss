@@ -31,7 +31,8 @@ header {
             font-size: 14px;
             font-weight: 700;
             color: $white;
-            &:hover {
+            &:hover,
+            &:focus {
               color: $blue;
             }
           }
@@ -159,6 +160,11 @@ header {
     bottom: 50%;
     transform: translate(50%, 50%);
     z-index: 1;
+    &:focus,
+    &:active {
+      padding: 5px;
+      border: 1px solid $blue;
+    }
     img {
       width: 10px;
       @include responsive(T) {

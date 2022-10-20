@@ -120,7 +120,7 @@ header {
     font-weight: 700;
     color: #fff;
   }
-  .gnb-nav-list .nav-item .nav-title:hover {
+  .gnb-nav-list .nav-item .nav-title:hover, .gnb-nav-list .nav-item .nav-title:focus {
     color: #3da5f5;
   }
   .gnb-nav-list .nav-item .menu {
@@ -254,6 +254,10 @@ header {
   -webkit-transform: translate(50%, 50%);
           transform: translate(50%, 50%);
   z-index: 1;
+}
+.wrapper-banner .carousel-btn:focus, .wrapper-banner .carousel-btn:active {
+  padding: 5px;
+  border: 1px solid #3da5f5;
 }
 .wrapper-banner .carousel-btn img {
   width: 10px;
