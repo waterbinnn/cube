@@ -22,7 +22,7 @@
     <header>
         <div class="gnb">
 
-            <div class="gnb-wrapper md-only">
+            <div class="gnb-wrapper">
                 <!-- logo  -->
                 <section class="gnb-left">
                     <h1 class="logo">
@@ -38,22 +38,22 @@
                     <ul class="gnb-nav-list">
                         <!-- COMPANY -->
                         <li class="nav-item ">
-                            <button type="button" class="nav-title" id="company">
+                            <button type="button" class="nav-title" id="company" aria-label="company">
                                 COMPANY
                             </button>
                             <ul class="menu item1">
                                 <li class="menu-item">
-                                    <a href="#">
+                                    <a href="#" aria-label="company info">
                                         COMPANY INFO
                                     </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#">
+                                    <a href="#" aria-label="history">
                                         HISTORY
                                     </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#">
+                                    <a href="#" aria-label="organization">
                                         ORGANIZATION
                                     </a>
                                 </li>
@@ -61,32 +61,32 @@
                         </li>
                         <!-- ARTISTS -->
                         <li class="nav-item">
-                            <button type="button" class="nav-title" id="artists">
+                            <button type="button" class="nav-title" id="artists" aria-label="artists">
                                 ARTISTS
                             </button>
                             <ul class="menu item2">
                                 <li class="menu-item">
-                                    <a href="/gidle.html">
+                                    <a href="/gidle.html" aria-label="g idle">
                                         (G)-IDLE
                                     </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#">
+                                    <a href="http://www.cubeent.co.kr/btob" aria-label="b t o b">
                                         BTOB
                                     </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#">
+                                    <a href="http://www.cubeent.co.kr/pentagon" aria-label="pentagon">
                                         PENTAGON
                                     </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#">
+                                    <a href="http://www.cubeent.co.kr/lightsum" aria-label="lightsum">
                                         LIGHTSUM
                                     </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#">
+                                    <a href="http://www.cubeent.co.kr/clc" aria-label="clc">
                                         CLC
                                     </a>
                                 </li>
@@ -95,12 +95,12 @@
 
                         <!-- MULTIMEDIA -->
                         <li class="nav-item">
-                            <button type="button" class="nav-title" id="multimedia">
+                            <button type="button" class="nav-title" id="multimedia" aria-label="multimedia">
                                 MULTIMEDIA
                             </button>
                             <ul class="menu item3">
                                 <li class="menu-item">
-                                    <a href="#">
+                                    <a href="http://www.cubeent.co.kr/mv/" aria-label="music video">
                                         MUSIC VIDEO
                                     </a>
                                 </li>
@@ -109,7 +109,7 @@
 
                         <!-- AUDITION -->
                         <li class="nav-item">
-                            <a href="#" class="nav-title">
+                            <a href="#" class="nav-title" aria-label="audition">
                                 AUDITION
                             </a>
                         </li>
@@ -119,8 +119,8 @@
                 <!-- User section -->
                 <section class="gnb-right">
                     <h2 class="visually-hidden">로그인 회원가입</h2>
-                    <a href="#" class="user-btn">LOGIN</a>
-                    <a href="#" class="user-btn">SIGNUP</a>
+                    <a href="#" class="user-btn" aria-label="login">LOGIN</a>
+                    <a href="#" class="user-btn" aria-label="sign up">SIGNUP</a>
                 </section>
             </div>
         </div>
@@ -129,7 +129,7 @@
             <a href="/" class="logo">
                 <img src="./assets/images/logo.png" alt="큐브엔터테인먼트 로고이미지">
             </a>
-            <button type="button" class="menu-icon">
+            <button type="button" class="menu-icon" aria-label="메뉴 버튼">
                 <img src="./assets/icons/icon-menu.svg" alt="메뉴아이콘" class="icon-image">
             </button>
         </section>
@@ -138,26 +138,40 @@
         <!-- banner -->
         <section class="wrapper-banner">
             <h2 class="visually-hidden">Banner</h2>
-            <img src="	http://www.cubeent.co.kr/banner/images/banner/120409/20221017_banner.jpg" alt="idle banner image"
-                class="banner-image">
-            <img src="http://www.cubeent.co.kr/banner/images/banner/120409/20220427_banner.jpg"
-                alt="idle miyeon banner image" class="banner-image">
-            <img src="http://www.cubeent.co.kr/banner/images/banner/120409/20220627_banner.jpg" alt="btob banner image2"
-                class="banner-image">
-            <img src="http://www.cubeent.co.kr/banner/images/banner/120409/20220809_banner.jpg"
-                alt="pentagon banner image" class="banner-image">
-            <img src="http://www.cubeent.co.kr/banner/images/banner/120409/20220524_banner.jpg"
-                alt="lightsum banner image" class="banner-image">
-            <img src="http://www.cubeent.co.kr/banner/images/banner/120409/anicube_top_banner.jpg"
-                alt="anicube banner image" class="banner-image">
+            <button type="button" aria-label="left button" class="carousel-btn left" id="prev-btn">
+                <img src="./assets/icons/icon-left.svg" alt="left">
+            </button>
+            <div class="image-wrapper">
+                <img src="http://www.cubeent.co.kr/banner/images/banner/120409/anicube_top_banner.jpg"
+                    alt="anicube banner image" class="banner-image first-img">
+                <img id="main-banner1" src="http://www.cubeent.co.kr/banner/images/banner/120409/20221017_banner.jpg"
+                    alt="idle banner image" class="banner-image">
+                <img id="main-banner2" src="http://www.cubeent.co.kr/banner/images/banner/120409/20220427_banner.jpg"
+                    alt="idle miyeon banner image" class="banner-image">
+                <img id="main-banner3" src="http://www.cubeent.co.kr/banner/images/banner/120409/20220627_banner.jpg"
+                    alt="btob banner image2" class="banner-image">
+                <img id="main-banner4" src="http://www.cubeent.co.kr/banner/images/banner/120409/20220809_banner.jpg"
+                    alt="pentagon banner image" class="banner-image">
+                <img id="main-banner5" src="http://www.cubeent.co.kr/banner/images/banner/120409/20220524_banner.jpg"
+                    alt="lightsum banner image" class="banner-image">
+                <img src="http://www.cubeent.co.kr/banner/images/banner/120409/anicube_top_banner.jpg"
+                    alt="anicube banner image" class="banner-image">
+                <img src="http://www.cubeent.co.kr/banner/images/banner/120409/20221017_banner.jpg"
+                    alt="idle banner image" class="banner-image last-img">
+            </div>
+            <button type="button" aria-label="right button" class="carousel-btn right" id="next-btn">
+                <img src="./assets/icons/icon-right.svg" alt="right">
+            </button>
+
         </section>
 
-        <ul class="carousel-wrapper main">
-            <li class="carousel-item num1"></li>
-            <li class="carousel-item num2"></li>
-            <li class="carousel-item num3"></li>
-            <li class="carousel-item num4"></li>
-            <li class="carousel-item num5"></li>
+        <ul class="pagenation main">
+            <li class="active" data-index="1"></li>
+            <li data-index="2"></li>
+            <li data-index="3"></li>
+            <li data-index="4"></li>
+            <li data-index="5"></li>
+            <li data-index="6"></li>
         </ul>
 
     </header>
@@ -165,7 +179,6 @@
 
     <main class="container-main">
         <h1 class="main-tit">
-            <!-- TODO: 스크롤 이벤트  -->
             <strong class="cube-text">THIS
                 <br>
                 MONTH'S
@@ -187,31 +200,31 @@
             <h2 class="visually-hidden">More About Cube</h2>
             <ul class="wrapper-boxes">
                 <div class="top-box-section" class="news" data-aos="fade-up" data-aos-offset="200"
-                    data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true">
+                    data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-once="true">
                     <li class="main_page-box">
-                        <strong>NEW
-                            <br>
-                            RELEASE</strong>
-                        <a href="https://www.youtube.com/watch?v=SmuuDi5ZwOo&list=OLAK5uy_mg0f08wU3YE7uz5u0UN0cgHcyproVKUpU&index=2"
-                            class="box-item" target="_blank">
+                        <strong>NEW<br>RELEASE</strong>
+                        <a href="http://www.cubeent.co.kr/gidlerelease" class="box-item" target="_blank"
+                            aria-label="gidle page로 이동">
                             <img src="./assets/images/albumcover.jpeg" alt="Idle's new album">
                         </a>
                     </li>
                     <li class="main_page-box">
                         <strong>MUSIC
                             VIDEO</strong>
-                        <a href="" class="box-item" target="_blank">
+                        <a href="http://www.cubeent.co.kr/mv/4238894" class="box-item" target="_blank"
+                            aria-label="music video page로 이동">
                             <img src="./assets/images/music_video_thumbnail.jpeg" alt="뮤직비디오">
                         </a>
                     </li>
                 </div>
                 <div class="bottom-box-section" data-aos="fade-up" data-aos-easing="ease-out-cubic"
-                    data-aos-duration="1000" data-aos-delay="400" data-aos-once="true">
+                    data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
                     <li class="main_page-box">
                         <strong>CUBE CAFE
                             <br>
                             PROMOTION</strong>
-                        <a href="https://www.instagram.com/cubaker_cube/" class="box-item" target="_blank">
+                        <a href="https://www.instagram.com/cubaker_cube/" class="box-item" target="_blank"
+                            aria-label="cubaker 페이지로 이동">
                             <img src="./assets/images/cubaker.png" alt="큐베이커">
                         </a>
                     </li>
@@ -219,13 +232,14 @@
                         <strong>OFFICAL
                             <br>
                             SHOP</strong>
-                        <a href="http://www.cubee.co.kr/" class="box-item" target="_blank">
+                        <a href="http://www.cubee.co.kr/" class="box-item" target="_blank"
+                            aria-label="cubee online shop 으로 이동">
                             <img src="./assets/images/cubee.jpeg" alt="큐비 굿즈 온라인 샾">
                         </a>
                     </li>
                     <li class="main_page-box">
                         <strong>ANICUBE</strong>
-                        <a href="https://www.anicube.com/" class="box-item" target="_blank">
+                        <a href="https://www.anicube.com/" class="box-item" target="_blank" aria-label="anicube 로 이동">
                             <img src="./assets/images/anicube.png" alt="에니큐브">
                         </a>
                     </li>
@@ -236,22 +250,22 @@
                 <h2 class="visually-hidden">SNS</h2>
                 <ul class="sns-wrapper">
                     <li class="sns-item">
-                        <a href="https://twitter.com/cubeunited" target="_blank">
+                        <a href="https://twitter.com/cubeunited" target="_blank" aria-label="twitter">
                             TWITTER
                         </a>
                     </li>
                     <li class="sns-item">
-                        <a href="https://www.facebook.com/UNITEDCUBE" target="_blank">
+                        <a href="https://www.facebook.com/UNITEDCUBE" target="_blank" aria-label="facebook">
                             FACEBOOK
                         </a>
                     </li>
                     <li class="sns-item">
-                        <a href="https://www.youtube.com/user/theunitedcube" target="_blank">
+                        <a href="https://www.youtube.com/user/theunitedcube" target="_blank" aria-label="youtube">
                             YOUTUBE
                         </a>
                     </li>
                     <li class="sns-item">
-                        <a href="https://weibo.com/u/2641606884" target="_blank">
+                        <a href="https://weibo.com/u/2641606884" target="_blank" aria-label="weibo">
                             WEIBO
                         </a>
                     </li>
@@ -262,9 +276,9 @@
 
     <footer class="ft-container">
         <ul class="ft-info-list">
-            <li class="ft-info-item">이용약관</li>
-            <li class="ft-info-item">이메일주소 무단수집거부</li>
-            <li class="ft-info-item">개인정보취급방침</li>
+            <li class="ft-info-item" aria-label="이용약관">이용약관</li>
+            <li class="ft-info-item" aria-label="이메일주소 무단수집거부">이메일주소 무단수집거부</li>
+            <li class="ft-info-item" aria-label="개인정보취급방침">개인정보취급방침</li>
         </ul>
         <div class="txt-wrapper">
             <address class="ft-txt">7F, 83, ACHASAN-RO, SEONGDONG-GU, SEOUL, 04793 KOREA</address>
@@ -278,7 +292,9 @@
     <script>
         AOS.init();
     </script>
-    <script type="text/javascript" src="./js/nav.js"></script>
+    <script src="./js/nav.js"></script>
+    <script src="./js/banner.js"></script>
+    <script src="./js/mainCarousel.js"></script>
 </body>
 
 </html>

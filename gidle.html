@@ -22,8 +22,8 @@
 <body>
     <header>
         <div class="gnb">
-            <div class="gnb-wrapper">
 
+            <div class="gnb-wrapper md-only">
                 <!-- logo  -->
                 <section class="gnb-left">
                     <h1 class="logo">
@@ -33,29 +33,28 @@
                     </h1>
                 </section>
 
-
                 <!-- Nav -->
                 <nav class="gnb-nav">
                     <h2 class="visually-hidden">메뉴</h2>
                     <ul class="gnb-nav-list">
                         <!-- COMPANY -->
                         <li class="nav-item ">
-                            <button type="button" class="nav-title" id="company">
+                            <button type="button" class="nav-title" id="company" aria-label="company">
                                 COMPANY
                             </button>
                             <ul class="menu item1">
                                 <li class="menu-item">
-                                    <a href="#">
+                                    <a href="#" aria-label="company info">
                                         COMPANY INFO
                                     </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#">
+                                    <a href="#" aria-label="history">
                                         HISTORY
                                     </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#">
+                                    <a href="#" aria-label="organization">
                                         ORGANIZATION
                                     </a>
                                 </li>
@@ -63,32 +62,32 @@
                         </li>
                         <!-- ARTISTS -->
                         <li class="nav-item">
-                            <button type="button" class="nav-title" id="artists">
+                            <button type="button" class="nav-title" id="artists" aria-label="artists">
                                 ARTISTS
                             </button>
                             <ul class="menu item2">
                                 <li class="menu-item">
-                                    <a href="/gidle.html">
+                                    <a href="/gidle.html" aria-label="g idle">
                                         (G)-IDLE
                                     </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#">
+                                    <a href="http://www.cubeent.co.kr/btob" aria-label="b t o b">
                                         BTOB
                                     </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#">
+                                    <a href="http://www.cubeent.co.kr/pentagon" aria-label="pentagon">
                                         PENTAGON
                                     </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#">
+                                    <a href="http://www.cubeent.co.kr/lightsum" aria-label="lightsum">
                                         LIGHTSUM
                                     </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#">
+                                    <a href="http://www.cubeent.co.kr/clc" aria-label="clc">
                                         CLC
                                     </a>
                                 </li>
@@ -97,12 +96,12 @@
 
                         <!-- MULTIMEDIA -->
                         <li class="nav-item">
-                            <button type="button" class="nav-title" id="multimedia">
+                            <button type="button" class="nav-title" id="multimedia" aria-label="multimedia">
                                 MULTIMEDIA
                             </button>
                             <ul class="menu item3">
                                 <li class="menu-item">
-                                    <a href="#">
+                                    <a href="http://www.cubeent.co.kr/mv/" aria-label="music video">
                                         MUSIC VIDEO
                                     </a>
                                 </li>
@@ -111,7 +110,7 @@
 
                         <!-- AUDITION -->
                         <li class="nav-item">
-                            <a href="#" class="nav-title">
+                            <a href="#" class="nav-title" aria-label="audition">
                                 AUDITION
                             </a>
                         </li>
@@ -121,8 +120,8 @@
                 <!-- User section -->
                 <section class="gnb-right">
                     <h2 class="visually-hidden">로그인 회원가입</h2>
-                    <a href="#" class="user-btn">LOGIN</a>
-                    <a href="#" class="user-btn">SIGNUP</a>
+                    <a href="#" class="user-btn" aria-label="login">LOGIN</a>
+                    <a href="#" class="user-btn" aria-label="sign up">SIGNUP</a>
                 </section>
             </div>
         </div>
@@ -131,7 +130,7 @@
             <a href="/" class="logo">
                 <img src="./assets/images/logo.png" alt="큐브엔터테인먼트 로고이미지">
             </a>
-            <button type="button" class="menu-icon">
+            <button type="button" class="menu-icon" aria-label="메뉴 버튼">
                 <img src="./assets/icons/icon-menu.svg" alt="메뉴아이콘" class="icon-image">
             </button>
         </section>
@@ -142,15 +141,14 @@
         <section class="idle-section">
             <h2 class="visually-hidden">아이들 단체 사진</h2>
             <div class="image-wrapper">
-                <button class="carousel-btn before">
-                    <img src="./assets/icons/icon-left.svg" alt="before">
-                </button>
-                <img src="./assets/images/all_photo_0.png" alt="idle image" class="title-image">
-                <button class="carousel-btn next">
-                    <img src="./assets/icons/icon-right.svg" alt="next">
-                </button>
+                <img src="./assets/images/all_photo_3.jpeg" alt="idle image" class="title-image first-img">
+                <img src="./assets/images/all_photo_1.jpeg" alt="idle image" class="title-image">
+                <img src="./assets/images/all_photo_2.png" alt="idle image" class="title-image">
+                <img src="./assets/images/all_photo_3.jpeg" alt="idle image" class="title-image">
+                <img src="./assets/images/all_photo_1.jpeg" alt="idle image" class="title-image last-img">
             </div>
         </section>
+
 
         <section class="members-container">
             <h2 class="visually-hidden">introduce member</h2>
@@ -315,9 +313,9 @@
     <script>
         AOS.init();
     </script>
-    <script type="text/javascript" src="./js/textScroll.js"></script>
-    <script type="text/javascript" src="./js/nav.js"></script>
-
+    <script src="./js/textScroll.js"></script>
+    <script src="./js/nav.js"></script>
+    <script src="./js/idleCarousel.js"></script>
 </body>
 
 </html>
