@@ -15,17 +15,31 @@ for (let i = 0; i < navList.length; i++) {
   navList[i].addEventListener('mouseover', () => {
     menu[i].classList.toggle('active')
   })
+  navList[i].addEventListener('click', () => {
+    menu[i].classList.toggle('active')
+  })
 }
 
 for (let i = 0; i < navList.length; i++) {
   menu[i].addEventListener('mouseleave', () => {
     menu[i].classList.remove('active')
+    menu[i + 1].classList.remove('active')
+    menu[i - 1].classList.remove('active')
+  })
+  menu[i].addEventListener('keydown', () => {
+    menu[i - 1].classList.remove('active')
+    menu[i + 1].classList.remove('active')
+  })
+  menu[i].addEventListener('click', () => {
+    menu[i - 1].classList.remove('active')
+    menu[i + 1].classList.remove('active')
   })
 }
 
 mobileBtn.addEventListener('click', () => {
   mobileGnb.classList.add('active')
 })
+
 mobileGnb.addEventListener('mouseleave', () => {
   mobileGnb.classList.remove('active')
 })
