@@ -130,15 +130,6 @@ header {
     border-radius: 4px;
     top: 40px;
   }
-  .gnb-nav-list .nav-item .menu.item1 {
-    left: -2px;
-  }
-  .gnb-nav-list .nav-item .menu.item2 {
-    left: 4px;
-  }
-  .gnb-nav-list .nav-item .menu.item3 {
-    left: 10px;
-  }
   .gnb-nav-list .nav-item .menu-item {
     padding: 10px 4px;
     font-size: 11px;
@@ -147,6 +138,27 @@ header {
   }
   .gnb-nav-list .nav-item .menu-item:hover {
     color: #3da5f5;
+  }
+  .gnb-nav-list .nav-item .menu.item1 {
+    left: -2px;
+    display: none;
+  }
+  .gnb-nav-list .nav-item .menu.item1.active {
+    display: block;
+  }
+  .gnb-nav-list .nav-item .menu.item2 {
+    left: 4px;
+    display: none;
+  }
+  .gnb-nav-list .nav-item .menu.item2.active {
+    display: block;
+  }
+  .gnb-nav-list .nav-item .menu.item3 {
+    left: 10px;
+    display: none;
+  }
+  .gnb-nav-list .nav-item .menu.item3.active {
+    display: block;
   }
 }
 .gnb-right {
@@ -212,25 +224,62 @@ header {
 }
 
 .wrapper-banner {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 80vw;
+  width: 330px;
   margin: 100px auto 0;
   overflow-x: hidden;
+}
+@media screen and (min-width: 768px) {
+  .wrapper-banner {
+    width: 700px;
+    margin: 10vw auto 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .wrapper-banner {
     width: 959px;
-    margin: 10vw auto 0;
   }
+}
+.wrapper-banner .image-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.wrapper-banner .carousel-btn {
+  position: absolute;
+  bottom: 50%;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+  z-index: 1;
+}
+.wrapper-banner .carousel-btn img {
+  width: 10px;
+}
+@media screen and (min-width: 768px) {
+  .wrapper-banner .carousel-btn img {
+    width: 30px;
+  }
+}
+.wrapper-banner .carousel-btn.left {
+  left: 5px;
+}
+.wrapper-banner .carousel-btn.right {
+  right: 30px;
 }
 .wrapper-banner .banner-image {
   display: block;
-  width: 80vw;
-  -o-object-fit: contain;
-     object-fit: contain;
+  width: 330px;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 8px;
+}
+@media screen and (min-width: 768px) {
+  .wrapper-banner .banner-image {
+    width: 700px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .wrapper-banner .banner-image {
@@ -282,29 +331,31 @@ header {
   }
 }
 
-.carousel-wrapper {
+.pagenation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 12vw;
-  margin: 10px auto;
   position: absolute;
+  right: 50%;
+  bottom: 0px;
+  margin: 10px auto;
   -webkit-transform: translate(50%, -50%);
           transform: translate(50%, -50%);
+  width: 8vw;
 }
-.carousel-wrapper.main {
-  bottom: 0px;
-  right: 50%;
-}
-.carousel-item {
-  width: 1.2vw;
-  height: 1.2vw;
-  background-color: #fff;
-  border-radius: 50%;
+.pagenation li {
+  width: 1vw;
+  height: 1vw;
+  background-color: #e0e1e4;
   opacity: 50%;
+  border-radius: 50%;
+}
+.pagenation .active {
+  background: #fff;
+  opacity: 100%;
 }
 
 .container-main {
@@ -336,7 +387,7 @@ header {
   margin-top: 10vw;
   text-align: center;
   position: relative;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Unna", serif;
 }
 .container-main .main-tit .cube-text {
   position: absolute;
@@ -352,6 +403,7 @@ header {
   left: 30vw;
   -webkit-transform: rotate(-10deg);
           transform: rotate(-10deg);
+  z-index: 10;
   color: transparent;
   background-image: url("../../assets/images/bg_gradient01.jpeg");
   background-clip: text;
@@ -504,55 +556,76 @@ header {
   padding: 100px 0 40px;
   text-align: center;
   font-family: "Unna", serif;
-  font-size: 14vw;
+  font-size: 60px;
 }
 @media screen and (min-width: 1200px) {
   .idle-title {
+    font-size: 100px;
     padding: 10vw 0 8vw;
   }
 }
 .idle-section {
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
-  margin: 0 auto;
-}
-
-.image-wrapper {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 auto;
+  overflow-x: hidden;
+  width: 320px;
 }
-.image-wrapper .title-image {
-  width: 60vw;
+@media screen and (min-width: 768px) {
+  .idle-section {
+    width: 700px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .idle-section {
+    width: 900px;
+  }
+}
+.idle-section .image-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.idle-section .image-wrapper .title-image {
+  display: block;
+  width: 320px;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 8px;
 }
-.image-wrapper .carousel-btn {
-  position: absolute;
-  bottom: 2%;
+@media screen and (min-width: 768px) {
+  .idle-section .image-wrapper .title-image {
+    width: 700px;
+  }
 }
-.image-wrapper .carousel-btn img {
-  width: 4vw;
-}
-.image-wrapper .carousel-btn.before {
-  left: 2%;
-}
-.image-wrapper .carousel-btn.next {
-  right: 2%;
+@media screen and (min-width: 1200px) {
+  .idle-section .image-wrapper .title-image {
+    width: 900px;
+  }
 }
 
 .members-container {
   width: 100vw;
-  height: 150vh;
   margin: 5vw 0;
 }
+@media screen and (min-width: 1200px) {
+  .members-container {
+    height: 500vh;
+  }
+}
 .members-container .sticky {
-  position: sticky;
-  top: 100px;
-  max-height: 100vh;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  overflow: scroll;
+}
+@media screen and (min-width: 1200px) {
+  .members-container .sticky {
+    position: sticky;
+    top: 200px;
+    max-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
 }
 .members-container .horizontal {
   display: -webkit-box;
@@ -704,6 +777,7 @@ header {
   position: relative;
   width: 90%;
   margin: 40vw auto 30vw;
+  margin-right: 10px;
 }
 .seperate-tit strong {
   font-family: "Unna", serif;
@@ -783,10 +857,24 @@ header {
   gap: 3vw;
   margin: 0 5vw 10vw;
 }
+@media screen and (min-width: 768px) {
+  .twitter-wrapper {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
 
 .twitter-tweet {
   max-width: 16vw;
   min-width: 10vw;
+}
+.twitter-tweet:last-child {
+  margin: -150px 0;
+}
+@media screen and (min-width: 768px) {
+  .twitter-tweet:last-child {
+    margin: 0;
+  }
 }
 
 @-webkit-keyframes gradient {

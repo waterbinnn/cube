@@ -7,37 +7,41 @@
     padding: 100px 0 40px;
     text-align: center;
     font-family: $font-album;
-    font-size: 14vw;
+    font-size: 60px;
     @include responsive(D) {
+      font-size: 100px;
       padding: 10vw 0 8vw;
     }
   }
   &-section {
-    width: min-content;
+    position: relative;
+    display: flex;
     margin: 0 auto;
-  }
-}
+    overflow-x: hidden;
+    width: 320px;
 
-.image-wrapper {
-  position: relative;
-  display: flex;
-
-  .title-image {
-    width: 60vw;
-    border-radius: 8px;
-  }
-
-  .carousel-btn {
-    position: absolute;
-    bottom: 2%;
-    img {
-      width: 4vw;
+    @include responsive(T) {
+      width: 700px;
     }
-    &.before {
-      left: 2%;
+    @include responsive(D) {
+      width: 900px;
     }
-    &.next {
-      right: 2%;
+
+    .image-wrapper {
+      display: flex;
+
+      .title-image {
+        display: block;
+        width: 320px;
+        object-fit: cover;
+        border-radius: 8px;
+        @include responsive(T) {
+          width: 700px;
+        }
+        @include responsive(D) {
+          width: 900px;
+        }
+      }
     }
   }
 }

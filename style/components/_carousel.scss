@@ -1,22 +1,23 @@
-.carousel {
-  &-wrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 12vw;
-    margin: 10px auto;
-    position: absolute;
-    transform: translate(50%, -50%);
+.pagenation {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  right: 50%;
+  bottom: 0px;
+  margin: 10px auto;
+  transform: translate(50%, -50%);
+  width: 8vw;
 
-    &.main {
-      bottom: 0px;
-      right: 50%;
-    }
-  }
-  &-item {
-    width: 1.2vw;
-    height: 1.2vw;
-    background-color: $white;
-    border-radius: 50%;
+  li {
+    width: 1vw;
+    height: 1vw;
+    background-color: $grey;
     opacity: 50%;
+    border-radius: 50%;
+  }
+
+  .active {
+    background: $white;
+    opacity: 100%;
   }
 }

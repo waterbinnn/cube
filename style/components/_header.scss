@@ -138,22 +138,49 @@ header {
 }
 
 .wrapper-banner {
+  position: relative;
   display: flex;
-  width: 80vw;
+  width: 330px;
   margin: 100px auto 0;
   overflow-x: hidden;
-
+  @include responsive(T) {
+    width: 700px;
+    margin: 10vw auto 0;
+  }
   @include responsive(D) {
     width: 959px;
-    margin: 10vw auto 0;
+  }
+
+  .image-wrapper {
+    display: flex;
+  }
+  .carousel-btn {
+    position: absolute;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+    z-index: 1;
+    img {
+      width: 10px;
+      @include responsive(T) {
+        width: 30px;
+      }
+    }
+    &.left {
+      left: 5px;
+    }
+    &.right {
+      right: 30px;
+    }
   }
 
   .banner-image {
     display: block;
-    width: 80vw;
-    object-fit: contain;
+    width: 330px;
+    object-fit: cover;
     border-radius: 8px;
-
+    @include responsive(T) {
+      width: 700px;
+    }
     @include responsive(D) {
       width: 959px;
     }
