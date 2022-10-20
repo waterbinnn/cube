@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko-KR">
 
 <head>
     <meta charset="UTF-8">
@@ -16,44 +16,44 @@
     <link rel="shortcut icon" href="http://www.cubeent.co.kr/files/attach/xeicon/favicon.ico">
     <link rel="stylesheet" href="./style/main.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script async src="https://platform.twitter.com/widgets.js"></script>
 </head>
 
 <body>
-    <header>
-        <!-- Desktop navBar -->
+    <h1 class="visually-hidden">main page</h1>
+    <header lang="en">
+        <!-- Desktop NavBar -->
         <div class="gnb">
             <div class="gnb-wrapper">
                 <!-- logo  -->
                 <section class="gnb-left">
-                    <h1 class="logo">
-                        <a href="/">
-                            <img src="./assets/images/logo.png" alt="큐브엔터테인먼트 로고이미지">
-                        </a>
-                    </h1>
+                    <h2 class="visually-hidden">logo</h2>
+                    <a href="/" class="logo">
+                        <img src="./assets/images/logo.png" alt="logo">
+                    </a>
                 </section>
                 <!-- Nav -->
                 <nav class="gnb-nav">
-                    <h2 class="visually-hidden">메뉴</h2>
+                    <h2 class="visually-hidden">Navbar</h2>
                     <ul class="gnb-nav-list">
                         <!-- COMPANY -->
-                        <li class="nav-item ">
-                            <button type="button" class="nav-title" id="company" aria-label="company">
+                        <li class="nav-item">
+                            <button type="button" class="nav-title" id="company">
                                 COMPANY
                             </button>
                             <ul class="menu item1">
                                 <li class="menu-item">
-                                    <a href="#" aria-label="company info">
+                                    <a href="http://www.cubeent.co.kr/intro" target="_blank">
                                         COMPANY INFO
                                     </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#" aria-label="history">
+                                    <a href="http://www.cubeent.co.kr/history" target="_blank">
                                         HISTORY
                                     </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="#" aria-label="organization">
+                                    <a href="http://www.cubeent.co.kr/organ" target="_blank">
                                         ORGANIZATION
                                     </a>
                                 </li>
@@ -61,32 +61,32 @@
                         </li>
                         <!-- ARTISTS -->
                         <li class="nav-item">
-                            <button type="button" class="nav-title" id="artists" aria-label="artists">
+                            <button type="button" class="nav-title" id="artists">
                                 ARTISTS
                             </button>
                             <ul class="menu item2">
                                 <li class="menu-item">
-                                    <a href="/gidle.html" aria-label="g idle">
+                                    <a href="/gidle.html">
                                         (G)-IDLE
                                     </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="http://www.cubeent.co.kr/btob" aria-label="b t o b">
+                                    <a href="http://www.cubeent.co.kr/btob" target="_blank">
                                         BTOB
                                     </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="http://www.cubeent.co.kr/pentagon" aria-label="pentagon">
+                                    <a href="http://www.cubeent.co.kr/pentagon" target="_blank">
                                         PENTAGON
                                     </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="http://www.cubeent.co.kr/lightsum" aria-label="lightsum">
+                                    <a href="http://www.cubeent.co.kr/lightsum" target="_blank">
                                         LIGHTSUM
                                     </a>
                                 </li>
                                 <li class="menu-item">
-                                    <a href="http://www.cubeent.co.kr/clc" aria-label="clc">
+                                    <a href="http://www.cubeent.co.kr/clc" target="_blank">
                                         CLC
                                     </a>
                                 </li>
@@ -100,7 +100,7 @@
                             </button>
                             <ul class="menu item3">
                                 <li class="menu-item">
-                                    <a href="http://www.cubeent.co.kr/mv/" aria-label="music video">
+                                    <a href="http://www.cubeent.co.kr/mv/" target="_blank">
                                         MUSIC VIDEO
                                     </a>
                                 </li>
@@ -109,7 +109,7 @@
 
                         <!-- AUDITION -->
                         <li class="nav-item">
-                            <a href="#" class="nav-title" aria-label="audition">
+                            <a href="http://www.cubeent.co.kr/aud_index" class="nav-title" target="_blank">
                                 AUDITION
                             </a>
                         </li>
@@ -118,40 +118,40 @@
                 <!-- User section -->
                 <section class="gnb-right">
                     <h2 class="visually-hidden">로그인 회원가입</h2>
-                    <a href="#" class="user-btn" aria-label="login">LOGIN</a>
-                    <a href="#" class="user-btn" aria-label="sign up">SIGNUP</a>
+                    <a href="#" class="user-btn">LOGIN</a>
+                    <a href="#" class="user-btn">SIGNUP</a>
                 </section>
             </div>
         </div>
-        <!-- mobile navBar -->
+        <!-- Mobile navBar -->
         <section class="gnb-mobile">
-            <h1 class="visually-hidden">header</h1>
+            <h2 class="visually-hidden">header</h2>
             <a href="/" class="logo">
-                <img src="./assets/images/logo.png" alt="큐브엔터테인먼트 로고이미지">
+                <img src="./assets/images/logo.png" alt="logo">
             </a>
-            <button type="button" class="menu-icon" aria-label="메뉴 버튼">
-                <img src="./assets/icons/icon-menu.svg" alt="메뉴아이콘" class="icon-image">
+            <button type="button" class="menu-icon" aria-label="menu button">
+                <img src="./assets/icons/icon-menu.svg" alt="" class="icon-image">
             </button>
             <section class="mobile-menulist">
                 <h2 class="visually-hidden">menu</h2>
                 <ol>
                     <li>
-                        <strong class="nav-title" aria-label="company">
+                        <strong class="nav-title">
                             COMPANY
                         </strong>
                         <ol class="menu">
                             <li class="menu-item">
-                                <a href="#" aria-label="company info">
+                                <a href="http://www.cubeent.co.kr/intro" target="_blank">
                                     COMPANY INFO
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="#" aria-label="history">
+                                <a href="http://www.cubeent.co.kr/history" target="_blank">
                                     HISTORY
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="#" aria-label="organization">
+                                <a href="http://www.cubeent.co.kr/organ" target="_blank">
                                     ORGANIZATION
                                 </a>
                             </li>
@@ -159,78 +159,116 @@
 
                     </li>
                     <li>
-                        <strong class="nav-title" aria-label="artists">
+                        <strong class="nav-title">
                             ARTISTS
                         </strong>
                         <ol class="menu">
                             <li class="menu-item">
-                                <a href="/gidle.html" aria-label="g idle">
+                                <a href="/gidle.html" target="_blank">
                                     (G)-IDLE
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="http://www.cubeent.co.kr/btob" aria-label="b t o b">
+                                <a href="http://www.cubeent.co.kr/btob" target="_blank">
                                     BTOB
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="http://www.cubeent.co.kr/pentagon" aria-label="pentagon">
+                                <a href="http://www.cubeent.co.kr/pentagon" target="_blank">
                                     PENTAGON
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="http://www.cubeent.co.kr/lightsum" aria-label="lightsum">
+                                <a href="http://www.cubeent.co.kr/lightsum" target="_blank">
                                     LIGHTSUM
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="http://www.cubeent.co.kr/clc" aria-label="clc">
+                                <a href="http://www.cubeent.co.kr/clc" target="_blank">
                                     CLC
                                 </a>
                             </li>
                         </ol>
                     </li>
                     <li>
-                        <strong class="nav-title" aria-label="multimedia">
+                        <strong class="nav-title">
                             MULTIMEDIA
                         </strong>
                         <ol class="menu">
                             <li class="menu-item">
-                                <a href="http://www.cubeent.co.kr/mv/" aria-label="music video">
+                                <a href="http://www.cubeent.co.kr/mv/" target="_blank">
                                     MUSIC VIDEO
                                 </a>
                             </li>
                         </ol>
                     </li>
                     <li>
-                        <a href="#" class="nav-title" aria-label="audition">
+                        <a href="#" class="nav-title" target="_blank">
                             AUDITION
                         </a>
                     </li>
                 </ol>
                 <div class="wrapper-user">
-                    <a href="#" class="user-btn" aria-label="login">LOGIN</a>
-                    <a href="#" class="user-btn" aria-label="sign up">SIGNUP</a>
+                    <a href="#" class="user-btn">LOGIN</a>
+                    <a href="#" class="user-btn">SIGNUP</a>
                 </div>
             </section>
         </section>
+
+        <!-- banner -->
+        <section class="wrapper-banner">
+            <h2 class="visually-hidden">Banner</h2>
+            <button type="button" aria-label="previous button" class="carousel-btn left" id="prev-btn">
+                <img src="./assets/icons/icon-left.svg" alt="">
+            </button>
+            <div class="image-wrapper">
+                <img src="http://www.cubeent.co.kr/banner/images/banner/120409/anicube_top_banner.jpg"
+                    alt="anicube image" class="banner-image first-img">
+                <img id="main-banner1" src="http://www.cubeent.co.kr/banner/images/banner/120409/20221017_banner.jpg"
+                    alt="idle image" class="banner-image">
+                <img id="main-banner2" src="http://www.cubeent.co.kr/banner/images/banner/120409/20220427_banner.jpg"
+                    alt="idle miyeon image" class="banner-image">
+                <img id="main-banner3" src="http://www.cubeent.co.kr/banner/images/banner/120409/20220627_banner.jpg"
+                    alt="btob image2" class="banner-image">
+                <img id="main-banner4" src="http://www.cubeent.co.kr/banner/images/banner/120409/20220809_banner.jpg"
+                    alt="pentagon image" class="banner-image">
+                <img id="main-banner5" src="http://www.cubeent.co.kr/banner/images/banner/120409/20220524_banner.jpg"
+                    alt="lightsum image" class="banner-image">
+                <img src="http://www.cubeent.co.kr/banner/images/banner/120409/anicube_top_banner.jpg"
+                    alt="anicube image" class="banner-image">
+                <img src="http://www.cubeent.co.kr/banner/images/banner/120409/20221017_banner.jpg" alt="idle image"
+                    class="banner-image last-img">
+            </div>
+            <button type="button" aria-label="next button" class="carousel-btn right" id="next-btn">
+                <img src="./assets/icons/icon-right.svg" alt="">
+            </button>
+        </section>
+
+        <ul class="pagenation main" aria-hidden="true">
+            <li class="active" data-index="1"></li>
+            <li data-index="2"></li>
+            <li data-index="3"></li>
+            <li data-index="4"></li>
+            <li data-index="5"></li>
+            <li data-index="6"></li>
+        </ul>
     </header>
 
     <main class="idle-main">
-        <h1 class="idle-title">(G)-IDLE</h1>
+        <h1 class="idle-title" lang="en">(G)-IDLE</h1>
         <section class="idle-section">
             <h2 class="visually-hidden">아이들 단체 사진</h2>
             <div class="image-wrapper">
-                <img src="./assets/images/all_photo_3.jpeg" alt="idle image" class="title-image first-img">
-                <img src="./assets/images/all_photo_1.jpeg" alt="idle image" class="title-image">
-                <img src="./assets/images/all_photo_2.png" alt="idle image" class="title-image">
-                <img src="./assets/images/all_photo_3.jpeg" alt="idle image" class="title-image">
-                <img src="./assets/images/all_photo_1.jpeg" alt="idle image" class="title-image last-img">
+                <img src="./assets/images/all_photo_3.jpeg" alt="idle image3" class="title-image first-img">
+                <img src="./assets/images/all_photo_1.jpeg" alt="idle image1" class="title-image">
+                <img src="./assets/images/all_photo_2.png" alt="idle image2" class="title-image">
+                <img src="./assets/images/all_photo_3.jpeg" alt="idle image3" class="title-image">
+                <img src="./assets/images/all_photo_1.jpeg" alt="idle image1" class="title-image last-img">
             </div>
         </section>
 
 
-        <section class="members-container">
+        <section class="members-container" lang="en">
             <h2 class="visually-hidden">introduce member</h2>
             <div class="sticky">
                 <div class="horizontal">
@@ -244,9 +282,10 @@
         </section>
 
         <section class="album-section">
+            <h2>앨범 섹션</h2>
             <div class="album-title-wrapper">
-                <strong class="album-title" data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in-cubic"
-                    data-aos-duration="800" data-aos-once="true">I LOVE</strong>
+                <strong class="album-title" lang="en" data-aos="fade-up" data-aos-offset="100"
+                    data-aos-easing="ease-in-cubic" data-aos-duration="800" data-aos-once="true">I LOVE</strong>
                 <br>
                 <span class="album-release">2022.10.17</span>
             </div>
@@ -261,7 +300,7 @@
                     <img src="./assets/images/nude_poster2.jpeg" alt="포스터 이미지" class="album-image last">
                     <div class="wrapper-subtext">
                         <span class="back-txt top"></span>
-                        <span class="front-txt">MY TRUE SELF
+                        <span class="front-txt" lang="en">MY TRUE SELF
                             <br>
                             THAT I LOVE
                         </span>
@@ -292,31 +331,31 @@
             </section>
             <div class="seperate-tit">
                 <strong data-aos="fade-up" data-aos-easing="ease-in-cubic" data-aos-duration="1000" data-aos-delay="100"
-                    data-aos-once="true">Yes I'm Nxde</strong>
+                    data-aos-once="true" lang="en">Yes I'm Nxde</strong>
             </div>
 
 
             <section class="tracklist-wrapper" data-aos="fade-up" data-aos-easing="ease-out-cubic"
-                data-aos-duration="1000" data-aos-delay="100" data-aos-once="true">
+                data-aos-duration="1000" data-aos-delay="100" data-aos-once="true" lang="en">
                 <h2 class="tracklist-tit">TRACK LIST</h2>
                 <img src="./assets/images/nude_Track-List.jpeg" alt="i love track list" class="tracklist-image">
                 <ol class="tracklist-list">
-                    <li>01. Nxde</li>
-                    <li>02. LOVE</li>
-                    <li>03. Change</li>
-                    <li>04. Reset</li>
+                    <li lang="en">01. Nxde</li>
+                    <li lang="en">02. LOVE</li>
+                    <li lang="en">03. Change</li>
+                    <li lang="en">04. Reset</li>
                     <li>05. 조각품 </li>
-                    <li>06. DARK (X-File)</li>
+                    <li lang="en">06. DARK (X-File)</li>
                 </ol>
             </section>
 
             <iframe src="https://www.youtube.com/embed/fCO7f0SmrDc"
-                title="(여자)아이들((G)I-DLE) - 'Nxde' Official Music Video" frameborder="0"
+                title="(여자)아이들((G)I-DLE) - 'Nxde' Official Music Video"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen class="music-video"></iframe>
         </section>
 
-        <section class="sns-container">
+        <section class="sns-container" lang="en">
             <h2 class="visually-hidden">SNS</h2>
             <ul class="sns-wrapper idle">
                 <li class="sns-item">
@@ -379,11 +418,11 @@
             <li class="ft-info-item">개인정보취급방침</li>
         </ul>
         <div class="txt-wrapper">
-            <address class="ft-txt">7F, 83, ACHASAN-RO, SEONGDONG-GU, SEOUL, 04793 KOREA</address>
+            <address class="ft-txt" lang="en">7F, 83, ACHASAN-RO, SEONGDONG-GU, SEOUL, 04793 KOREA</address>
             <span class="ft-txt">TEL:82-2-3445-1045</span>
         </div>
 
-        <strong class="ft-copyright">COPYRIGHT (C) CUBE ENTERTAINMENT INC, ALL RIGHT RESERVED.</strong>
+        <strong class="ft-copyright" lang="en">COPYRIGHT (C) CUBE ENTERTAINMENT INC, ALL RIGHT RESERVED.</strong>
     </footer>
 
     <script>
