@@ -464,7 +464,7 @@ header {
           transform: rotate(-10deg);
   z-index: 10;
   color: transparent;
-  background-image: url("../../assets/images/bg_gradient01.jpeg");
+  background-image: url("../../assets/images/bg_gradient.png");
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-animation: gradient 8s linear infinite;
@@ -724,7 +724,7 @@ header {
   font-weight: 400;
   line-height: 1;
   color: transparent;
-  background-image: url("../../assets/images/bg_gradient01.jpeg");
+  background-image: url("../../assets/images/bg_gradient.png");
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-animation: gradient 8s linear infinite;
@@ -783,7 +783,7 @@ header {
   bottom: 8vw;
   left: 3vw;
   color: transparent;
-  background-image: url("../../assets/images/bg_gradient01.jpeg");
+  background-image: url("../../assets/images/bg_gradient.png");
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-animation: gradient 8s linear infinite;
@@ -843,7 +843,7 @@ header {
   font-size: 16vw;
   font-weight: 300;
   color: transparent;
-  background-image: url("../../assets/images/bg_gradient01.jpeg");
+  background-image: url("../../assets/images/bg_gradient.png");
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-animation: gradient 8s linear infinite;
