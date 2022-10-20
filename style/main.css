@@ -321,6 +321,32 @@ header {
   display: block;
 }
 
+.wrapper-user {
+  margin: 50px 0 0 -30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+.wrapper-user .user-btn {
+  padding: 3px 30px;
+  color: #e0e1e4;
+  font-size: 12px;
+  font-weight: 500;
+}
+.wrapper-user .user-btn:first-child {
+  border-right: 1px solid #e0e1e4;
+}
+.wrapper-user .user-btn:hover {
+  color: #3da5f5;
+}
+
 .ft-container {
   width: 90%;
   margin: 0 auto;

@@ -21,9 +21,9 @@
 
 <body>
     <header>
+        <!-- Desktop navBar -->
         <div class="gnb">
-
-            <div class="gnb-wrapper md-only">
+            <div class="gnb-wrapper">
                 <!-- logo  -->
                 <section class="gnb-left">
                     <h1 class="logo">
@@ -32,7 +32,6 @@
                         </a>
                     </h1>
                 </section>
-
                 <!-- Nav -->
                 <nav class="gnb-nav">
                     <h2 class="visually-hidden">메뉴</h2>
@@ -116,7 +115,6 @@
                         </li>
                     </ul>
                 </nav>
-
                 <!-- User section -->
                 <section class="gnb-right">
                     <h2 class="visually-hidden">로그인 회원가입</h2>
@@ -125,6 +123,7 @@
                 </section>
             </div>
         </div>
+        <!-- mobile navBar -->
         <section class="gnb-mobile">
             <h1 class="visually-hidden">header</h1>
             <a href="/" class="logo">
@@ -133,7 +132,7 @@
             <button type="button" class="menu-icon" aria-label="메뉴 버튼">
                 <img src="./assets/icons/icon-menu.svg" alt="메뉴아이콘" class="icon-image">
             </button>
-            <section class="mobile-menulist active">
+            <section class="mobile-menulist">
                 <h2 class="visually-hidden">menu</h2>
                 <ol>
                     <li>
@@ -209,6 +208,10 @@
                         </a>
                     </li>
                 </ol>
+                <div class="wrapper-user">
+                    <a href="#" class="user-btn" aria-label="login">LOGIN</a>
+                    <a href="#" class="user-btn" aria-label="sign up">SIGNUP</a>
+                </div>
             </section>
         </section>
     </header>
