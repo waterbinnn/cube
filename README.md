@@ -21,7 +21,7 @@ https://waterbinnn.github.io/cube/
 
 - 이미지 슬라이드
 - Fade up 효과
-- 가로 스크롤
+- Parallax Scrolling
 - 텍스트 flow 효과
 - 반응형 페이지
 
